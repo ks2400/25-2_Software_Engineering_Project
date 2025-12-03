@@ -1,0 +1,101 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목양관 빈 강의실 체커</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+
+<body>
+    <div class="header">
+        <div class="navBuilding">
+            <h3>건물 : </h3> <button>본부동</button> <button>진리관</button> <button class="active">목양관</button> <button>지혜관</button>
+            <button>조형관</button> <button>외식관</button> <button>체육관</button> <button>예술대학</button> <button>음악관</button> 
+        </div> 
+        <div id="navFeatures">
+            <h3>목양관</h3><br>
+            충남 천안시 동남구 백석대학로 1-1 <br>
+            지하 1층 부터 5층까지 존재함. 엘리베이터 X <br>
+            강의실, 교수연구실, 휴게실 등으로 구성되어있음.
+        </div>
+        <div class="navFloor">  
+            <h3>층수 : </h3> <button id="F3">3층</button> <button id="F4">4층</button>
+            <button id="F5">5층</button>
+        </div>
+        <div class="navTime">
+            <h3>요일 : </h3> <select id="day">
+                <option value="mon" selected>월요일</option>
+                <!--기본 설정되어있는 시간을 월요일 1교시로-->
+                <option value="tue">화요일</option>
+                <option value="wed">수요일</option>
+                <option value="thu">목요일</option>
+            </select>
+            <h3>교시 : </h3> <select id="class">
+                <option value="class1" selected>1교시</option>
+                <option value="class2">2교시</option>
+                <option value="class3">3교시</option>
+                <option value="class4">4교시</option>
+                <option value="class5">5교시</option>
+                <option value="class6">6교시</option>
+                <option value="class7">7교시</option>
+                <option value="class8">8교시</option>
+                <option value="class9">9교시</option>
+            </select>
+            <button id="check">확인</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="sectionTop">
+            <div class="lAside">
+                <div class="continer">
+                    <div data-3-room-info="311" data-4-room-info="411" data-5-room-info="509" class="item">1</div>
+                    <div data-3-room-info="310" data-4-room-info="410" data-5-room-info="508" class="item">2</div>
+                    <div data-room-info="stair" class="item">계단 3</div>
+                    <div data-room-info="bathroom" class="item">화장실 4</div>
+                    <div data-3-room-info="309" data-4-room-info="409" data-5-room-info="507" class="item">5</div>
+                    <div data-3-room-info="308" data-4-room-info="408" data-5-room-info="506" class="item">6</div>
+                    <div class="item">빈공간 박스 7</div>
+                    <div data-room-info="stair" class="item">계단2 8</div>
+                    <div data-room-info="corridor" class="item">복도 9</div>
+                    <div data-room-info="rest" class="item">휴게실 10</div>
+                    <div data-3-room-info="301" data-4-room-info="401" data-5-room-info="501" class="item">11</div>
+                    <div data-3-room-info="302" data-4-room-info="402" data-5-room-info="502" class="item">12</div>
+                    <div data-3-room-info="303" data-4-room-info="403" data-5-room-info="503" class="item">13</div>
+                    <div data-3-room-info="304" data-4-room-info="404" class="item">14</div>
+                    <div data-3-room-info="305" data-4-room-info="405" class="item">15</div>
+                    <div data-3-room-info="306" data-4-room-info="406" data-5-room-info="504" class="item">16</div>
+                </div> 
+            </div>
+             <div class="rAside">
+        <h2 id="floorTitle"></h2> 
+        <br>
+        <div class="rAsideTop" id="floorDescription">
+            <!--정보 들어가는 공간-->
+        </div>
+        <div class="rAsideBottom" id="floorSchedule">
+            <!--시간표 넣는 공간(미구현)-->
+        </div>
+    </div>
+
+
+        </div>
+        <div class="bAside">
+            <!-- 사진 넣는 공간(미구현) -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>소프트웨어공학 2조<br>
+            강요한, 기태훈, 노정명, 백재민, 오진영, 임재원<br>
+            본 지도는 정확하지 않을 수 있습니다.
+        </h4>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
